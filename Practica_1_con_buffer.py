@@ -91,12 +91,19 @@ def producer(listaProducidos, lSemPuedeProducir, lSemPuedeConsumir, mutex, indic
         print (f"{current_process().name} produciendo...")
 
         add_data(listaProducidos, pid, dataAnterior, mutex, indicesProducir) # Crea un producto y lo añade en su hueco de la lista
-        
+
+        mutex.acquire() # Controla que el acceso a listaProducidos sea seguro    
+
+        '''
+        Comentario del profesor, esto es también una regíón crítica.
+        Comentario alumna: se añaden las líneas 95 y 106 para solventar el problema de ser region críica
+        '''
         dataAnterior= listaProducidos[pid][(indicesProducir[pid]-1) % K]
         
         print (f"El {current_process().name} ha fabricado {dataAnterior}.")
         print (f"El buffer del {current_process().name} es {listaProducidos[pid][:]}.")
        
+        mutex.release()
 
         lSemPuedeConsumir[pid].release()
 
