@@ -19,8 +19,8 @@ Parte2:
  - **Practica_1_con_buffer.py** solución a la Parte 2
 
 ## Ejecución
-- Parte 1: python3 Practica_1_sin_buffer
-- Parte 2: python3 Practica_1_con_buffer
+Parte 1: python3 Practica_1_sin_buffer
+Parte 2: python3 Practica_1_con_buffer
 
 
 ## CORRECCIONES HECHAS
