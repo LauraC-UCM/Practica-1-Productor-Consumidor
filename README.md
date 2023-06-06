@@ -24,7 +24,7 @@ Parte 1: python3 Practica_1_sin_buffer
 Parte 2: python3 Practica_1_con_buffer
 
 
-## CORRECCIONES HECHAS
+  ## CORRECCIONES IMPLEMENTADAS
 - Readme completado
 - Archivos .py sin espacios
 - Incluidas líneas 95, 99 y 106 en el archivo _Practica_1_con_buffer.py_
