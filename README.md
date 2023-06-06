@@ -15,9 +15,18 @@ Parte2:
 
 ## Archivos
  
- - **Practica_1_sin_buffer** solución a la Parte 1
- - **Practica_1_con_buffer** solución a la Parte 2
+ - **Practica_1_sin_buffer.py** solución a la Parte 1
+ - **Practica_1_con_buffer.py** solución a la Parte 2
 
 ## Ejecución
 - Parte 1: python3 Practica_1_sin_buffer
 - Parte 2: python3 Practica_1_con_buffer
+
+
+## CORRECCIONES HECHAS
+- Readme completado
+- Archivos .py sin espacios
+- Incluidas líneas 95, 99 y 106 en el archivo _ _Practica_1_con_buffer.py_ _
+    - Línea 95: mutex.acquire () # Controla que el acceso a listaProducidos sea seguro
+    - Línea 99: comentario
+    - Línea 106: mutex.release()
